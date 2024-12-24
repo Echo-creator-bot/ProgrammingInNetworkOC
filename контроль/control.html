@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан "Czezuraint"</title>
+    <link rel="stylesheet" href="./css/control.css">
+    <link rel="stylesheet" href="./fonts/ofont.ru_Etude Noire.ttf">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="./jpg/logotip.jpg" alt="Логотип ресторана" width="100"> 
+            </div>
+            <nav>
+                <ul>
+                    <li><h1>"Вкус моря в каждом блюде"</h1></li>
+                    <li><a href="#about" class="header__link">О нас</a></li>
+                    <li><a href="#menu" class="header__link">Меню</a></li>
+                    <li><a href="#contact" class="header__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="restaurant-name">
+        <h1 class="absolute">Ресторан
+            морепродуктов "Czezuraint"</h1>
+    </section>
+    <section id="about" class="about">
+        <h2>О нас</h2>
+        <p class="text">Добро пожаловать в "Czezuraint" – островок свежести и изысканных вкусов моря. Мы предлагаем вам насладиться лучшими дарами океана, приготовленными с любовью и страстью. От нежных устриц до ароматной паэльи – каждое блюдо создано для того, чтобы подарить вам незабываемые впечатления</p>
+    </section>
+    
+
+    <section id="menu">
+        <h2>Меню</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="./jpg/1.jpg" alt="Название блюда 1">
+                <h3>Тартар из тунца с авокадо</h3>
+                <p>Свежий тунец, нарезанный кубиками, с нежным авокадо, каперсами и пикантной заправкой из лайма.</p>
+                <span class="price">Цена: 350 ₽</span>
+            </div>
+            
+            <div class="menu-item">
+                <img src="./jpg/2.jpg" alt="Название блюда 2">
+                <h3>Севиче из гребешков</h3>
+                <p>Тонко нарезанные гребешки, маринованные в цитрусовом соке с красным луком, перцем чили и кинзой.</p>
+                <span class="price">Цена: 400 ₽</span>
+            </div>
+            <div class="menu-item">
+                <img src="./jpg/3.webp" alt="Название блюда 3">
+                <h3>Карпаччо из лосося</h3>
+                <p>Тонкие ломтики копченого лосося, приправленные оливковым маслом, лимонным соком и укропом</p>
+                <span class="price">Цена: 320 ₽</span>
+            </div>
+            <div class="menu-item">
+                <img src="./jpg/4.webp" alt="Название блюда 4">
+                <h3>Устрицы "Фин де Клер" (6 шт.)</h3>
+                <p>Свежайшие устрицы, подаются на льду с лимоном</p>
+                <span class="price">Цена: 450 ₽</span>
+            </div>
+            <div class="menu-item">
+                <img src="./jpg/5.webp" alt="Название блюда 5">
+                <h3> Салат с осьминогом и картофелем</h3>
+                <p>Нежный осьминог, отварной картофель, оливки, каперсы, петрушка, оливковое масло.</p>
+                <span class="price">Цена: 420 ₽</span>
+            </div>
+            <div class="menu-item">
+                <img src="./jpg/6.webp" alt="Название блюда 6">
+                <h3>Паэлья с морепродуктами</h3>
+                <p>Классическая испанская паэлья с рисом, шафраном, креветками, мидиями, кальмарами и горошком.</p>
+                <span class="price">Цена: 720 ₽</span>
+            </div>
+            <div class="menu-item">
+                <img src="./jpg/7.webp" alt="Название блюда 7">
+                <h3>Жареный лосось с травами</h3>
+                <p>Нежный лосось, обжаренный до золотистой корочки, с ароматными травами и лимоном.</p>
+                <span class="price">Цена: 680 ₽</span>
+            </div>
+            <div class="menu-item">
+                <img src="./jpg/8.webp" alt="Название блюда 8">
+                <h3>Буйабес</h3>
+                <p>Классический французский рыбный суп с различными видами рыбы и морепродуктов, с томатами, луком и чесноком.</p>
+                <span class="price">Цена: 480 ₽</span>
+            </div>
+            
+        
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Адрес: г. Москва ул. Пушкина дом Колотушкина</p>
+        <p>Телефон: 776-2323</p>
+        <p>Email: Czezuraint@gmail.com</p>
+        <p>Режим работы: 11:00-00:00 </p>
+
+        <h3>Забронировать столик</h3>
+        <form id="booking-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Время:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Количество гостей:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button type="submit">Забронировать</button>
+        </form>
+        <div id="booking-message"></div>
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Ресторан "Czezuraint"</p>
+    </footer>
+
+    <script src="./script/control.js"></script>
+</body>
+</html>
